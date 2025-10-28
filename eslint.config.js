@@ -35,6 +35,9 @@ module.exports = [
       // Angular template inline rules
       ...angularEslintTemplatePlugin.configs['process-inline-templates'].rules,
 
+      // TypeScript recommended rules
+      ...tseslint.configs.recommended.rules,
+
       // Component selector rules
       '@angular-eslint/component-selector': [
         'error',
